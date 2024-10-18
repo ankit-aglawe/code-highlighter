@@ -2,11 +2,11 @@
   "name": "Highlightify-code-highlighter",
   "displayName": "Highlightify - Code Highlighter",
   "description": "Easily highlight and manage important sections of your code in Visual Studio Code.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "ankit-aglawe",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ankit-aglawe/code-highlighter.git"
+    "url": "https://github.com/ankit-aglawe/highlightify.git"
   },
   "engines": {
       "vscode": "^1.50.0"
