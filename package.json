@@ -16,9 +16,12 @@
   "categories": [
       "Other"
   ],
-  "activationEvents": [
-      "*"
-  ],
+"activationEvents": [
+  "onCommand:extension.highlightCode",
+  "onCommand:extension.removeHighlight",
+  "onCommand:extension.changeHighlightColor",
+  "onCommand:extension.searchHighlights"
+],
   "main": "./extension.js",
   "scripts": {
       "vscode:prepublish": "tsc -p ./",
