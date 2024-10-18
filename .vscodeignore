@@ -8,7 +8,6 @@ test/**
 node_modules/**
 coverage/**
 docs/**
-images/**
 .gitignore
 .vscodeignore
 .yarn.lock
