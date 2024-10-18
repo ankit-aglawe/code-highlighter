@@ -24,6 +24,10 @@ webpack.config.js
 **/*.ts
 .git/**
 images/icon128-circle_.png
+images/demo.gif
+images/demo2-std.gif
+images/demo640.gif
+
 
 # Include the compiled output directory
 !out/**
