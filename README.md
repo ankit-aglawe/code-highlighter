@@ -1,7 +1,11 @@
+<div align="center">
+
+![LOGO](images/icon128.png)
+
 # Highlightify - Code Highlighter
 
 **Easily highlight and manage important sections of your code in Visual Studio Code.**
-
+</div>
 
 ## Features
 
