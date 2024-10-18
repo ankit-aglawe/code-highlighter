@@ -1,6 +1,6 @@
 <div align="center">
 
-![LOGO](images/icon128.png)
+![LOGO](images/icon128-circle.png)
 
 # Highlightify - Code Highlighter
 
