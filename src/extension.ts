@@ -278,3 +278,5 @@ export function deactivate() {
     highlightDecorations.forEach(({ decoration }) => decoration.dispose());
     highlightDecorations = [];
 }
+
+

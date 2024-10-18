@@ -2,99 +2,103 @@
   "name": "Highlightify-code-highlighter",
   "displayName": "Highlightify - Code Highlighter",
   "description": "Easily highlight and manage important sections of your code in Visual Studio Code.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "publisher": "ankit-aglawe",
+  "main": "./out/extension.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/ankit-aglawe/highlightify.git"
   },
   "engines": {
-      "vscode": "^1.50.0"
+    "vscode": "^1.50.0"
   },
-
-  
   "categories": [
-      "Other"
+    "Other"
   ],
-"activationEvents": [
-  "onCommand:extension.highlightCode",
-  "onCommand:extension.removeHighlight",
-  "onCommand:extension.changeHighlightColor",
-  "onCommand:extension.searchHighlights"
-],
-    "main": "./out/extension.js",
+    "activationEvents": [
+    "onStartupFinished",
+    "onCommand:extension.highlightCode",
+    "onCommand:extension.removeHighlight",
+    "onCommand:extension.changeHighlightColor",
+    "onCommand:extension.searchHighlights"
+    ],
 
   "scripts": {
-      "vscode:prepublish": "tsc -p ./",
-      "compile": "tsc -p ./",
-      "watch": "tsc -watch -p ./",
-      "postinstall": "node ./node_modules/vscode/bin/install"
+    "compile": "tsc -p ./",
+    "compile:prod": "tsc -p ./tsconfig.prod.json",
+    "watch": "tsc -watch -p ./",
+    "vscode:prepublish": "npm run compile:prod",
+    "test": "mocha --require ts-node/register src/test/**/*.test.ts",
+    "package": "vsce package",
+    "publish": "vsce publish"
   },
   "devDependencies": {
-      "@types/node": "^14.14.6",
-      "typescript": "^4.0.3",
-      "vscode": "^1.1.37"
+    "@types/mocha": "^10.0.9",
+    "@types/node": "^14.14.6",
+    "mocha": "^10.7.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^4.9.5",
+    "vscode": "^1.1.37"
   },
-  "dependencies": {},
   "contributes": {
-      "commands": [
-          {
-              "command": "extension.highlightCode",
-              "title": "Highlight Code"
-          },
-          {
-              "command": "extension.removeHighlight",
-              "title": "Remove Highlight"
-          },
-          {
-              "command": "extension.changeHighlightColor",
-              "title": "Change Highlight Color"
-          },
-          {
-              "command": "extension.searchHighlights",
-              "title": "Search Highlights"
-          }
-      ],
-      "keybindings": [
-          {
-              "command": "extension.highlightCode",
-              "key": "ctrl+alt+h",
-              "when": "editorTextFocus"
-          },
-          {
-              "command": "extension.removeHighlight",
-              "key": "ctrl+alt+e",
-              "when": "editorTextFocus"
-          },
-          {
-              "command": "extension.changeHighlightColor",
-              "key": "ctrl+alt+c",
-              "when": "editorTextFocus"
-          },
-          {
-              "command": "extension.searchHighlights",
-              "key": "ctrl+alt+s",
-              "when": "editorTextFocus"
-          }
-      ],
-      "configuration": {
-          "type": "object",
-          "title": "Code Highlighter",
-          "properties": {
-              "highlightSettings.useSingleColor": {
-                  "type": "boolean",
-                  "default": false,
-                  "description": "When enabled, all highlights will use the first color in the list."
-              },
-              "highlightSettings.customColors": {
-                  "type": "array",
-                  "items": {
-                      "type": "string"
-                  },
-                  "default": [],
-                  "description": "Custom highlight colors (in rgba format)."
-              }
-          }
+    "commands": [
+      {
+        "command": "extension.highlightCode",
+        "title": "Highlight Code"
+      },
+      {
+        "command": "extension.removeHighlight",
+        "title": "Remove Highlight"
+      },
+      {
+        "command": "extension.changeHighlightColor",
+        "title": "Change Highlight Color"
+      },
+      {
+        "command": "extension.searchHighlights",
+        "title": "Search Highlights"
       }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.highlightCode",
+        "key": "ctrl+alt+h",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "extension.removeHighlight",
+        "key": "ctrl+alt+e",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "extension.changeHighlightColor",
+        "key": "ctrl+alt+c",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "extension.searchHighlights",
+        "key": "ctrl+alt+s",
+        "when": "editorTextFocus"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Code Highlighter",
+      "properties": {
+        "highlightSettings.useSingleColor": {
+          "type": "boolean",
+          "default": false,
+          "description": "When enabled, all highlights will use the first color in the list."
+        },
+        "highlightSettings.customColors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [],
+          "description": "Custom highlight colors (in rgba format)."
+        }
+      }
+    }
   }
 }
