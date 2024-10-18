@@ -23,6 +23,7 @@ webpack.config.js
 **/*.map
 **/*.ts
 .git/**
+images/icon128.png
 
 # Include the compiled output directory
 !out/**

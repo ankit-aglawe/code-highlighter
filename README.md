@@ -30,10 +30,15 @@
 
 ### Highlighting Code
 
-- **Method 1**: Select the code you want to highlight, right-click, and choose **Highlight Code**.
+- **Method 1**: Hover over selected text and click on **Highlight Code** in the hover menu.
 - **Method 2**: Use the command palette (`Ctrl+Shift+P`), type **Highlight Code**, and press Enter.
-- **Method 3**: Hover over selected text and click on **Highlight Code** in the hover menu.
+- **Method 3**: Select the code you want to highlight, right-click, and choose **Highlight Code**.
 - **Method 4**: Use the keyboard shortcut `Ctrl+Alt+H`.
+
+### Saving Highlights
+
+- **Method 1**: Hover over the highlighted code and click **Save Highlight**.
+- **Method 2**: Select the highlighted code, open the command palette, and run **Save Highlight**.
 
 ### Erasing Highlights
 
@@ -82,9 +87,9 @@
 
 ```json
 "highlightSettings.customColors": [
-    "rgba(255, 0, 0, 0.2)", // Red
-    "rgba(0, 255, 0, 0.2)", // Green
-    "rgba(0, 0, 255, 0.2)"  // Blue
+    "rgba(255, 0, 0, 0.2)",
+    "rgba(0, 255, 0, 0.2)", 
+    "rgba(0, 0, 255, 0.2)"  
 ]
 ```
 
