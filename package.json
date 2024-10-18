@@ -1,6 +1,6 @@
 {
-  "name": "code-highlighter",
-  "displayName": "Code Highlighter",
+  "name": "Highlightify-code-highlighter",
+  "displayName": "Highlightify - Code Highlighter",
   "description": "Easily highlight and manage important sections of your code in Visual Studio Code.",
   "version": "1.0.0",
   "publisher": "ankit-aglawe",
@@ -22,7 +22,8 @@
   "onCommand:extension.changeHighlightColor",
   "onCommand:extension.searchHighlights"
 ],
-  "main": "./extension.js",
+    "main": "./out/extension.js",
+
   "scripts": {
       "vscode:prepublish": "tsc -p ./",
       "compile": "tsc -p ./",

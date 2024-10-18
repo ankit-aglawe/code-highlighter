@@ -1,4 +1,4 @@
-# Code Highlighter
+# Highlightify - Code Highlighter
 
 **Easily highlight and manage important sections of your code in Visual Studio Code.**
 

@@ -1,11 +1,47 @@
+# .vscode/**
+# .vscode-test/**
+# src/**
+# .gitignore
+# .yarnrc
+# vsc-extension-quickstart.md
+# **/tsconfig.json
+# **/eslint.config.mjs
+# **/*.map
+# **/*.ts
+# **/.vscode-test.*
+
+
+# Exclude development directories and files
 .vscode/**
 .vscode-test/**
 src/**
+test/**
+out/test/**
+node_modules/**
+coverage/**
+docs/**
+images/**
+# Exclude configuration and metadata files
 .gitignore
-.yarnrc
-vsc-extension-quickstart.md
-**/tsconfig.json
-**/eslint.config.mjs
+.vscodeignore
+.yarn.lock
+package-lock.json
+tsconfig.json
+webpack.config.js
+.eslintignore
+.eslintrc.*
+.prettierrc
+.prettierignore
+*.md
+# Exclude source maps and TypeScript files
 **/*.map
 **/*.ts
-**/.vscode-test.*
+# Exclude Git files
+.git/**
+
+# Include compiled JavaScript files and necessary assets
+!out/**
+!dist/**
+!package.json
+!README.md
+!LICENSE
