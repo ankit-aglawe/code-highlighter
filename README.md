@@ -5,11 +5,14 @@
 # Highlightify - Code Highlighter
 
 **Easily highlight and manage important sections of your code in Visual Studio Code.**
+
+
+
+![Extension Demo](https://github.com/ankit-aglawe/highlightify/raw/main/images/demo2-std.gif)
+
 </div>
 
 ## Features
-
-![Extension Demo](images/demo2-std.gif)
 
 - **Highlight Code**: Quickly highlight selected code to mark important sections.
 - **Erase Highlights**: Remove highlights when they're no longer needed.
