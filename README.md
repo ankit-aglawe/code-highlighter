@@ -9,6 +9,8 @@
 
 ## Features
 
+![Extension Demo](images/demo2-std.gif)
+
 - **Highlight Code**: Quickly highlight selected code to mark important sections.
 - **Erase Highlights**: Remove highlights when they're no longer needed.
 - **Change Highlight Color**: Customize the color of your highlights for better organization.
@@ -17,6 +19,7 @@
 - **Keyboard Shortcuts**: Use shortcuts to perform actions faster.
 - **Search Highlights**: Quickly navigate to highlighted sections.
 - **Integration with Version Control**: Decide whether to share highlights with your team.
+
 
 ## Installation
 
